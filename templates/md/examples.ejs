@@ -6,16 +6,12 @@
  */ %><% if (examples && examples.length == 1) { %>
 ## <%=title %> Example
 
-```json
-<%- examples[0] %>
-```
+* `<%- examples[0] %>`
 <% } else if (examples && examples.length > 1) { %>
 ## <%=title %> Examples
 <%  _.forEach(examples, example => { %>
 
-```json
-<%- example %>
-```
+* `<%- examples[0] %>`
 
 <% }); %>
 <% } %>
