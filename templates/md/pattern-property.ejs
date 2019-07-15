@@ -79,18 +79,11 @@ Unknown type `<%= schema.type %>`.
 <% if (examples && examples.length == 1) { %>
 ### <%=name %> Example
 
-
-```json
-<%- examples[0] %>
-```
+* `<%- examples[0] %>`
 <% } else if (examples && examples.length > 1) { %>
 ### Pattern <%=name %> Examples
 <%  _.forEach(examples, example => { %>
 
-```json
-<%- example %>
-```
-
+* `<%- example %>`
 <% }); %>
 <% } %>
-
